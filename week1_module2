@@ -1,0 +1,24 @@
+#BAITAP2
+
+#cau12
+import matplotlib.image as mpimg
+img=mpimg.imread('/content/dog.jpeg')
+gray_img_01=(np.max(img,axis=2)+np.min(img,axis=2))/2
+print(gray_img_01[0,0])
+
+#cau13
+import matplotlib.image as mpimg
+import numpy as np
+img=mpimg.imread('/content/dog.jpeg')
+gray_img_02=np.mean(img,axis=2)
+print(gray_img_02[0,0])
+
+#cau14
+import matplotlib.image as mpimg
+import numpy as np
+img=mpimg.imread('/content/dog.jpeg')
+gray_img_03=np.dot(img[...,:3],[0.2989,0.5870,0.1140])
+print(gray_img_03[0,0])
+
+
+
